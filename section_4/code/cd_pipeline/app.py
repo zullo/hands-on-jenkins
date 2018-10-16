@@ -7,6 +7,7 @@ app = Flask(__name__)
 images = [
     "https://media.giphy.com/media/10rW4Xw9eO0RmU/giphy.gif",
     "https://media3.giphy.com/media/JQRKxN6GuhGhy/giphy.gif?cid=3640f6095bc5ec8d6e354d4b2e853cee",
+    "https://media1.giphy.com/media/7ygVM8vWhlkEo/giphy.gif?cid=3640f6095bc5ecb96f4865793655faeb",
     "https://media1.giphy.com/media/7ygVM8vWhlkEo/giphy.gif?cid=3640f6095bc5ecb96f4865793655faeb"
     #"http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26388-1381844103-11.gif",
     #"http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr01/15/9/anigif_enhanced-buzz-31540-1381844535-8.gif",
