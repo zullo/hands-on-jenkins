@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 
 pipeline {
-    agent any
+    agent "linux01"
 
     options {
         disableConcurrentBuilds()
@@ -36,7 +36,7 @@ def deploy(environment) {
 	if ("${environment}" == 'dev') {
 		containerName = "app_dev"
 		port = "8888"
-	} 
+	}
 	else {
 		println "Environment not valid"
 		System.exit(0)
@@ -47,4 +47,3 @@ def deploy(environment) {
 	sh "docker run -d -p ${port}:5000 --name ${containerName} hands-on-jenkins/myapp:${BUILD_NUMBER}"
 
 }
-

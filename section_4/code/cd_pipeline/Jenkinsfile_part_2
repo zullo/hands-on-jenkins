@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 
 pipeline {
-	agent any
+	agent "linux01"
 
 	options {
 		disableConcurrentBuilds()
@@ -56,7 +56,7 @@ def deploy(environment) {
 	if ("${environment}" == 'dev') {
 		containerName = "app_dev"
 		port = "8888"
-	} 
+	}
 	else if ("${environment}" == 'stage') {
 		containerName = "app_stage"
 		port = "88"
